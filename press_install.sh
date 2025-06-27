@@ -276,6 +276,8 @@ echo -e "${YELLOW}Please enter the number of the corresponding Press version you
 versions=("Version 15" "Develop")
 select version_choice in "${versions[@]}"; do
     case $REPLY in
+        1) bench_version="version-13"; break;;
+        2) bench_version="version-14"; break;;
         3) bench_version="version-15"; break;;
         4) bench_version="develop"; 
            echo ""
